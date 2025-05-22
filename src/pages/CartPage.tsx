@@ -34,14 +34,14 @@ const CartPage = () => {
     <button
       onClick={() => decreaseFromCart(product)}
       aria-label={`Remove one ${product.title} from cart`}
-      className="px-3 py-1 bg-gray-200 rounded hover:bg-gray-300"
+      className="px-3 cursor-pointer  py-1 bg-gray-200 rounded hover:bg-gray-300"
     >
       -
     </button>
     <span className="min-w-[2rem] text-center">{quantity}</span>
     <button
       onClick={() => addToCart(product)}
-      className="px-3 py-1 bg-gray-200 rounded hover:bg-gray-300"
+      className="px-3 cursor-pointer  py-1 bg-gray-200 rounded hover:bg-gray-300"
         aria-label={`Add one ${product.title} to cart`}
     >
       +
@@ -50,7 +50,7 @@ const CartPage = () => {
 
   <button
     onClick={() => removeFromCart(product.id)}
-    className="mt-2 sm:mt-0 sm:ml-4 px-3 py-1 bg-red-500 text-white rounded hover:bg-red-600 text-sm"
+    className="mt-2 cursor-pointer sm:mt-0 sm:ml-4 px-3 py-1 bg-red-500 text-white rounded hover:bg-red-600 text-sm"
   >
     Remove
   </button>
